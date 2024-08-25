@@ -1,0 +1,50 @@
+/* Style for h1 title */
+h1 {
+    text-align: center;
+}
+
+/* Styles for side-by-side divs */
+#content {
+    display: flex;
+    justify-content: space-between;
+}
+
+#left-div, #right-div {
+    width: 45%;
+}
+
+/* Style for last div */
+#footer {
+    width: 100%;
+    margin-top: 60%;
+    float: right;
+    margin-bottom: 20px;
+}
+
+/* Style for h3 tags */
+h3 {
+    font-weight: 500;
+}
+
+/* Style for ordered list */
+ol {
+    border: 1px solid red;
+    border-radius: 15px;
+    padding: 10px;
+    list-style: inside;
+}
+
+/* Style for unordered list */
+ul {
+    border: 1px dashed red;
+    border-radius: 15px;
+    padding: 10px;
+    list-style: upper-roman inside;
+    font-weight: 300;
+}
+
+/* Hover effect for links */
+a:hover {
+    text-decoration: underline;
+}
+
