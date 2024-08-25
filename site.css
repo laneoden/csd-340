@@ -1,0 +1,33 @@
+/* site.css */
+
+/* Container styling */
+#container {
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+/* Heading styles */
+h1, h2, h3, h4 {
+    background-color: #333399; /* Choose background color */
+    color: #ffffff; /* Ensure font color contrasts well with the background */
+    border: 1px solid #D6A800;
+    padding: 10px;
+}
+
+/* Anchor tag styling */
+a {
+    color: #663399; /* Choose color that matches color scheme */
+    text-decoration: none;
+}
+
+/* Anchor tag hover styling */
+a:hover {
+    color: #993399; /* Adjust color for hover */
+}
+
+/* Anchor tag visited styling */
+a:visited {
+    color: #663366; /* Adjust color for visited links */
+}
+
