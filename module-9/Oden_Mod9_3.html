@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+       	Gerald Oden
+    	CSD340
+       	Assignment 9.3
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Academic Web Development">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Gerald Oden">
+    <link rel="stylesheet" href="Oden_Mod9_3.css">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <script>
+        var firstWord = "dedication";
+        var secondWord = "experience";
+        var thirdWord = "leadership";
+        var fourthWord = "creativity";
+    </script>
+</head>
+
+<body>
+<div id="container">
+    <h1>Assignment 9.3: JavaScript - Part 1</h1>
+    <h2>Gerald Oden - Short Story</h2>
+
+    <p>Over the years, I've found that success in my field relies on a few key qualities. First and foremost is <span id="firstSpan">________</span>. Whether leading projects or working with diverse teams, the ability to focus and commit has always been a cornerstone of my professional journey.</p>
+
+    <p>Another important factor is <span id="secondSpan">________</span>. With nearly 25 years in IT and cybersecurity, I've gathered the knowledge that can only come from working in the field, navigating complex systems, and solving unique challenges along the way.</p>
+
+    <p>Of course, none of this would be possible without strong <span id="thirdSpan">________</span> and a touch of <span id="fourthSpan">________</span>. These traits not only guide my professional decisions but also inspire me in my personal pursuits, like playing guitar and photography.</p>
+
+    <hr />
+
+    <p>
+        <button type="button" onclick="document.getElementById('firstSpan').innerHTML = firstWord">Reveal First Word</button><br>
+        <button type="button" onclick="document.getElementById('secondSpan').innerHTML = secondWord">Reveal Second Word</button><br>
+        <button type="button" onclick="document.getElementById('thirdSpan').innerHTML = thirdWord">Reveal Third Word</button><br>
+        <button type="button" onclick="document.getElementById('fourthSpan').innerHTML = fourthWord">Reveal Fourth Word</button>
+    </p>
+
+    <address>
+        <p><a href="https://www.bellevue.edu" class="website-url">Bellevue University</a></p>
+        <p>1000 Galvin Road South</p>
+        <p>Bellevue, NE 68005</p>
+    </address>
+</div>
+</body>
+</html>
