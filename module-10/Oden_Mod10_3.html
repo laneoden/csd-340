@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!--
+        Gerald Oden
+        CSD340
+        Assignment 10.3
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <h1>Assignment 10.3: JavaScript - Part 2</h1>
+    <div class="image-gallery">
+        <img src="images/kitten1.jpg" alt="Kitten 1" id="kitten1" onclick="displayKittenDetails('kitten1')">
+        <img src="images/kitten2.jpg" alt="Kitten 2" id="kitten2" onclick="displayKittenDetails('kitten2')">
+        <img src="images/kitten3.jpg" alt="Kitten 3" id="kitten3" onclick="displayKittenDetails('kitten3')">
+    </div>
+    <div id="kittenDetails" class="kitten-details">
+        <p>Click on a picture of the kitten to read about him!</p>
+    </div>
+</body>
+</html>
