@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--
+        Gerald Oden
+        CSD340
+        Assignment 12.2
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <h1>Assignment 12.2: JavaScript - Part 4</h1>
+        <div id="content">
+            <!-- Updated Left Div to include JavaScript controlled book list -->
+            <div id="left-div">
+                <h3>Top 10 Favorite Books</h3>
+                <ol id="book-list">
+                    <li>The Martian</li>
+                    <li>Altered Carbon</li>
+                    <li>Game of Thrones</li>
+                    <li>The Handmaid's Tale</li>
+                    <li>The Girl With the Dragon Tattoo</li>
+                    <li>Extreme Ownership</li>
+                    <li>Mere Christianity</li>
+                    <li>The Dichotomy of Leadership</li>
+                    <li>Inside Delta Force</li>
+                    <li>The Lions of Lucerne</li>
+                </ol>
+                <div class="button-container">
+                    <button onclick="displayTopToBottom()">Top to Bottom</button>
+                    <button onclick="displayBottomToTop()">Bottom to Top</button>
+                </div>
+            </div>
+
+            <!-- Existing Right Div for Learning List -->
+            <div id="right-div">
+                <h3>5 Things I’ve Learned Since the Course Started</h3>
+                <ul>
+                    <li>I have learned to leverage CSS</li>
+                    <li>I have learned to use ordered lists in HTML</li>
+                    <li>I have learned to use Google Fonts</li>
+                    <li>I have learned to use the W3C HTML Validator</li>
+                    <li>I have learned to set custom colors for links, etc.</li>
+                </ul>
+            </div>
+        </div>
+        <div id="footer">
+            <a href="https://laneoden.github.io/csd-340/">Return to Github Portal</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
