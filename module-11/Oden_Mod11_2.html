@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            font-size: 24px;
+            color: #333;
+        }
+        p {
+            font-size: 16px;
+        }
+        .container {
+            margin-top: 10px;
+        }
+        input[type="text"] {
+            width: 300px;
+            padding: 8px;
+            margin-right: 10px;
+            margin-top: 5px;
+        }
+        button {
+            padding: 8px 15px;
+            margin-right: 10px;
+            cursor: pointer;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+        #displayArea {
+            margin-top: 20px;
+            padding: 10px;
+            border-top: 2px solid #333;
+        }
+        .item {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Assignment 11.2: JavaScript - Part 3</h1>
+    
+    <p>This is an interactive To Do List. Type in your first item in the text box, then click Add. Click the Display button to see current items in the list. Click on Delete Last Entry if you'd like to remove the last entry.</p>
+    
+    <div class="container">
+        <input type="text" id="userInput" placeholder="Enter a value" />
+        <button onclick="addItem()">Add</button>
+        <button onclick="deleteLast()">Delete Last Entry</button>
+        <button onclick="displayItems()">Display</button>
+    </div>
+    
+    <div id="displayArea">
+        <!-- Display content will appear here -->
+    </div>
+    
+    <script>
+        // Array to store the user inputs
+        let itemsArray = [];
+
+        // Function to add an item to the array
+        function addItem() {
+            let input = document.getElementById('userInput').value;  // Get the value from the text box
+            if(input !== "") {
+                itemsArray.push(input);  // Add to the array
+                alert(`Added "${input}" to position ${itemsArray.length}`);  // Alert user of added item and its position
+                document.getElementById('userInput').value = "";  // Clear the text box
+            } else {
+                alert("Please enter a value.");  // Handle empty input
+            }
+        }
+
+        // Function to delete the last item in the array
+        function deleteLast() {
+            if(itemsArray.length > 0) {
+                let deletedItem = itemsArray.pop();  // Remove the last item
+                alert(`Deleted last entry: "${deletedItem}"`);  // Alert user of deleted item
+            } else {
+                alert("Array is empty, nothing to delete.");  // Handle empty array
+            }
+        }
+
+        // Function to display all items in the array
+        function displayItems() {
+            let displayArea = document.getElementById('displayArea');  // Get display area
+            displayArea.innerHTML = "";  // Clear any previous content
+
+            if(itemsArray.length > 0) {
+                // Iterate over array and display each item
+                for(let i = 0; i < itemsArray.length; i++) {
+                    displayArea.innerHTML += `<p class="item">Item ${i + 1} = ${itemsArray[i]}</p>`;
+                }
+            } else {
+                displayArea.innerHTML = "<p>No items in the array to display.</p>";  // Handle empty array
+            }
+        }
+    </script>
+</body>
+</html>
